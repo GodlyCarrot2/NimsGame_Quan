@@ -27,6 +27,7 @@ public class Game {
         }
         //TO DO: Adjust the pieces DONE?
         pieces = pieces - take;
+        currentPlayer.adjustScore(take);
         System.out.println("There are "+ pieces+" remaining!");
         System.out.println("-----------------------");
         return take;
